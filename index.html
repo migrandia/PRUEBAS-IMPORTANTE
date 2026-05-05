@@ -118,17 +118,18 @@
         .dress-note { font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; color: var(--texto); margin-top: 15px; text-transform: uppercase; }
         .no-red-circle { position: relative; display: inline-block; }
 
-        /* ESTILO ITINERARIO CON FONDO TRASLÚCIDO */
+        /* ESTILO ITINERARIO - MAXIMIZADO */
         #itinerario-container {
-            background-color: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(5px);
-            padding: 40px;
-            border-radius: 8px;
-            border: 1px solid rgba(212, 180, 131, 0.2);
-            max-width: 450px;
+            padding: 20px;
+            max-width: 100%; /* Usa todo el ancho de la sección */
             margin: 0 auto 50px auto;
         }
-        #itinerario-img { width: 100%; height: auto; display: block; }
+        #itinerario-img { 
+            width: 90%; /* Ajuste para que se vea imponente */
+            height: auto; 
+            display: block; 
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body id="global-body">
