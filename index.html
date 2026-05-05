@@ -21,7 +21,7 @@
             foto_misa: "https://www.dropbox.com/scl/fi/n1fvnd10aw7y282g3118w/IGLESIA-JALISCO-BUENA.jpg?rlkey=kqvsg120eoovqvs36f5px1p0e&raw=1",
             foto_recepcion: "https://www.dropbox.com/scl/fi/6t54th9rwsol7r9e278p4/QUINTA-JALISCO.jpg?rlkey=a9dnl3r393oqnxe7q0u5wzwih&raw=1",
             url_imagen_sobre: "https://www.dropbox.com/scl/fi/o42d0wgeb2so41w6nz18a/mo-o-lluvia.png?rlkey=s7uryk85xgwpvncastuj87h5n&raw=1", 
-            url_itinerario: "https://www.dropbox.com/scl/fi/pgt4bu8w1mq3tw6eeu6lh/ITINERARIO-VALERIA.png?rlkey=ay3e6ame87s0i3byluz0yekc6&raw=1",
+            url_itinerario: "https://www.dropbox.com/scl/fi/7rcil8vu9pti9xr3prlgs/ITINERARIO-VALERIA-2.png?rlkey=th1a9mhp63y4nwx0rie82azla&raw=1",
             fecha_evento: "June 6, 2026 00:00:00",
             musica_url: "https://www.dropbox.com/scl/fi/6js2r20osm40mmncn0jiq/Justin-Bieber-Beauty-And-A-Beat-ft.-Nicki-Minaj-Official-Audio.mp3?rlkey=fm62cep3p0h1eimtbd511oumx&raw=1",
             mensaje_quinceañera: "Hoy celebro no solo mis quince años, sino el inicio de una nueva etapa llena de sueños e ilusiones. Gracias por acompañarme en esta noche mágica.",
@@ -49,7 +49,7 @@
         body { 
             margin: 0; font-family: 'Montserrat', sans-serif; color: var(--texto);
             -webkit-user-select: none; user-select: none; background-color: #f9f7f2;
-            line-height: 1.6; overflow: hidden; width: 100%;
+            line-height: 1.6; overflow-x: hidden; width: 100%;
         }
 
         #overlay {
@@ -118,17 +118,18 @@
         .dress-note { font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; color: var(--texto); margin-top: 15px; text-transform: uppercase; }
         .no-red-circle { position: relative; display: inline-block; }
 
-        /* ESTILO ITINERARIO - TAMAÑO MAXIMIZADO */
+        /* ESTILO ITINERARIO - TAMAÑO ULTRA MAXIMIZADO */
         #itinerario-container {
             width: 100%;
-            margin: 0 auto;
-            padding: 0;
+            overflow: visible; /* Permite que la escala se vea bien */
+            padding: 40px 0; /* Espacio para que no choque con otras secciones al escalar */
         }
         #itinerario-img { 
-            width: 100% !important; /* Ocupa todo el ancho */
-            max-width: 100%;
+            width: 100% !important;
             height: auto; 
             display: block;
+            transform: scale(1.15); /* Aumenta el tamaño un 15% adicional */
+            transform-origin: center;
         }
     </style>
 </head>
@@ -184,7 +185,7 @@
         </div>
     </section>
 
-    <section class="section" style="max-width: 100%; padding: 0;">
+    <section class="section" style="max-width: 100%; padding: 0; overflow: hidden;">
         <div id="itinerario-container">
             <img id="itinerario-img" src="" alt="Itinerario">
         </div>
@@ -242,7 +243,7 @@
     <section class="section" style="padding-left: 20px; padding-right: 20px;">
         <h2 class="title">lluvia de Sobres</h2>
         <div style="padding: 40px; border: 1px solid var(--dorado); background: white; margin-top: 30px; border-radius: 8px;">
-            <img id="sobre-img" src="" style="width: 70px; margin-bottom: 20px; display: inline-block;">
+            <img id="sobre-img" src="" style="width: 70px; margin-bottom: 20px; display: some-block;">
             <p style="font-size: 1.1rem; font-style: italic;">"Mi mejor regalo es tu presencia en este día tan especial, pero si deseas tener un detalle conmigo, puedes hacerlo a través de un sobre que podrás depositar en la entrada del salón."</p>
         </div>
     </section>
