@@ -106,7 +106,7 @@
         .carousel-item img { height: 400px; object-fit: cover; width: 100%; display: block; }
 
         .btn-action { display: inline-block; padding: 12px 25px; background: var(--dorado); color: white; text-decoration: none; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; border-radius: 2px; margin-top: 20px; transition: 0.3s; }
-        .btn-confirm { display: inline-block; padding: 18px 45px; background: var(--texto); color: white; text-decoration: none; font-weight: 600; border-radius: 50px; letter-spacing: 2px; margin-top: 30px; font-size: 0.85rem; text-transform: uppercase; }
+        .btn-confirm { display: inline-block; padding: 18px 45px; background: var(--texto); color: white; text-decoration: none; font-weight: 600; border-radius: 50px; letter-spacing: 2px; margin-top: 20px; font-size: 0.85rem; text-transform: uppercase; }
 
         .img-location { margin-bottom: 20px; height: 200px; object-fit: cover; width: 100%; }
         .center-img { display: block; margin: 30px auto 0 auto; border: 10px solid white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); max-width: 90%; }
@@ -118,17 +118,16 @@
         .dress-note { font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; color: var(--texto); margin-top: 15px; text-transform: uppercase; }
         .no-red-circle { position: relative; display: inline-block; }
 
-        /* ESTILO ITINERARIO - TAMAÑO ULTRA MAXIMIZADO */
         #itinerario-container {
             width: 100%;
-            overflow: visible; /* Permite que la escala se vea bien */
-            padding: 40px 0; /* Espacio para que no choque con otras secciones al escalar */
+            overflow: visible;
+            padding: 40px 0;
         }
         #itinerario-img { 
             width: 100% !important;
             height: auto; 
             display: block;
-            transform: scale(1.15); /* Aumenta el tamaño un 15% adicional */
+            transform: scale(1.15);
             transform-origin: center;
         }
     </style>
@@ -250,6 +249,7 @@
 
     <section class="section" style="background: var(--dorado); color: white; max-width: 100%;">
         <h2 class="title" style="color: white;">Confirmación</h2>
+        <p style="font-family: 'Playfair Display'; font-size: 1.2rem; margin-bottom: 20px; font-style: italic;">Sería un honor que me acompañes</p>
         <a id="go-rsvp" href="#" class="btn-confirm" style="background: white; color: var(--texto);">Confirmar TU ASISTENCIA</a>
     </section>
 
